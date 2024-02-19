@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/PruebaFT_V.1.1/ServicioValidarProfesor?wsdl" uri="src/conf/xml-resources/web-service-references/ServicioValidarProfesor/wsdl/localhost_8080/PruebaFT_V.1.1/ServicioValidarProfesor.wsdl"/>
+    <system systemId="http://localhost:8080/PruebaFT_V.1.1/ServicioValidarProfesor?xsd=1" uri="src/conf/xml-resources/web-service-references/ServicioValidarProfesor/wsdl/localhost_8080/PruebaFT_V.1.1/ServicioValidarProfesor.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/PruebaFT_V.1.1/ServicioAsignaturaCRUD?wsdl" uri="src/conf/xml-resources/web-service-references/ServicioAsignaturaCRUD/wsdl/localhost_8080/PruebaFT_V.1.1/ServicioAsignaturaCRUD.wsdl"/>
+    <system systemId="http://localhost:8080/PruebaFT_V.1.1/ServicioAsignaturaCRUD?xsd=1" uri="src/conf/xml-resources/web-service-references/ServicioAsignaturaCRUD/wsdl/localhost_8080/PruebaFT_V.1.1/ServicioAsignaturaCRUD.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/PruebaFT_V.1.1/ServicioAsignarMateria?wsdl" uri="src/conf/xml-resources/web-service-references/ServicioAsignarMateria/wsdl/localhost_8080/PruebaFT_V.1.1/ServicioAsignarMateria.wsdl"/>
+    <system systemId="http://localhost:8080/PruebaFT_V.1.1/ServicioAsignarMateria?xsd=1" uri="src/conf/xml-resources/web-service-references/ServicioAsignarMateria/wsdl/localhost_8080/PruebaFT_V.1.1/ServicioAsignarMateria.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/PruebaFT_V.1.1/ServicioCRUD?wsdl" uri="src/conf/xml-resources/web-service-references/ServicioCRUD/wsdl/localhost_8080/PruebaFT_V.1.1/ServicioCRUD.wsdl"/>
+    <system systemId="http://localhost:8080/PruebaFT_V.1.1/ServicioCRUD?xsd=1" uri="src/conf/xml-resources/web-service-references/ServicioCRUD/wsdl/localhost_8080/PruebaFT_V.1.1/ServicioCRUD.xsd_1.xsd"/>
+</catalog>

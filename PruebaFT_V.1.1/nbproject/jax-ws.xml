@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="ServicioCRUD">
+      <implementation-class>Servicios.ServicioCRUD</implementation-class>
+    </service>
+    <service name="ServicioValidarProfesor">
+      <implementation-class>Servicios.ServicioValidarProfesor</implementation-class>
+    </service>
+    <service name="ServicioAsignaturaCRUD">
+      <implementation-class>Servicios.ServicioAsignaturaCRUD</implementation-class>
+    </service>
+    <service name="ServicioAsignarMateria">
+      <implementation-class>Servicios.ServicioAsignarMateria</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

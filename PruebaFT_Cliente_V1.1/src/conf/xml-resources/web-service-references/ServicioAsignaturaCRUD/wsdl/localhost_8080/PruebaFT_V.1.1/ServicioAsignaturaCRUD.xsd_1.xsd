@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://Servicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Servicios/">
+
+<xs:element name="buscarAsignatura" type="tns:buscarAsignatura"/>
+
+<xs:element name="buscarAsignaturaResponse" type="tns:buscarAsignaturaResponse"/>
+
+<xs:element name="createAsignatura" type="tns:createAsignatura"/>
+
+<xs:element name="createAsignaturaResponse" type="tns:createAsignaturaResponse"/>
+
+<xs:element name="deleteAsignatura" type="tns:deleteAsignatura"/>
+
+<xs:element name="deleteAsignaturaResponse" type="tns:deleteAsignaturaResponse"/>
+
+<xs:element name="listarAsignatura" type="tns:listarAsignatura"/>
+
+<xs:element name="listarAsignaturaResponse" type="tns:listarAsignaturaResponse"/>
+
+<xs:element name="readAsignatura" type="tns:readAsignatura"/>
+
+<xs:element name="readAsignaturaResponse" type="tns:readAsignaturaResponse"/>
+
+<xs:element name="updateAsignatura" type="tns:updateAsignatura"/>
+
+<xs:element name="updateAsignaturaResponse" type="tns:updateAsignaturaResponse"/>
+
+<xs:complexType name="createAsignatura">
+<xs:sequence>
+<xs:element name="ID_Asignatura" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="departamento" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createAsignaturaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarAsignatura">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarAsignaturaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:asignatura" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="asignatura">
+<xs:sequence>
+<xs:element name="departamento" type="xs:string" minOccurs="0"/>
+<xs:element name="id_Asignatura" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarAsignatura">
+<xs:sequence>
+<xs:element name="ID_Asignatura" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarAsignaturaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:asignatura" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateAsignatura">
+<xs:sequence>
+<xs:element name="ID_Asignatura" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="departamento" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateAsignaturaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAsignatura">
+<xs:sequence>
+<xs:element name="ID_Asignatura" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAsignaturaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="readAsignatura">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="readAsignaturaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:asignatura" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

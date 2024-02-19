@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://Servicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Servicios/">
+
+<xs:element name="CreateAsignarMateria" type="tns:CreateAsignarMateria"/>
+
+<xs:element name="CreateAsignarMateriaResponse" type="tns:CreateAsignarMateriaResponse"/>
+
+<xs:element name="deleteAsignarMateria" type="tns:deleteAsignarMateria"/>
+
+<xs:element name="deleteAsignarMateriaResponse" type="tns:deleteAsignarMateriaResponse"/>
+
+<xs:element name="readXasignatura" type="tns:readXasignatura"/>
+
+<xs:element name="readXasignaturaResponse" type="tns:readXasignaturaResponse"/>
+
+<xs:element name="readXestudiante" type="tns:readXestudiante"/>
+
+<xs:element name="readXestudianteResponse" type="tns:readXestudianteResponse"/>
+
+<xs:complexType name="CreateAsignarMateria">
+<xs:sequence>
+<xs:element name="idEstudiante" type="xs:string" minOccurs="0"/>
+<xs:element name="idMateria" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CreateAsignarMateriaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="readXestudiante">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="readXestudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:asignarMateria" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="asignarMateria">
+<xs:sequence>
+<xs:element name="apellidoEstudiante" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_Asignatura" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_Estudiante" type="xs:string" minOccurs="0"/>
+<xs:element name="nombreAsignatura" type="xs:string" minOccurs="0"/>
+<xs:element name="nombreDepartamento" type="xs:string" minOccurs="0"/>
+<xs:element name="nombreEstudiante" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="readXasignatura">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="readXasignaturaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:asignarMateria" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAsignarMateria">
+<xs:sequence>
+<xs:element name="id_estudiante" type="xs:string" minOccurs="0"/>
+<xs:element name="id_materia" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAsignarMateriaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

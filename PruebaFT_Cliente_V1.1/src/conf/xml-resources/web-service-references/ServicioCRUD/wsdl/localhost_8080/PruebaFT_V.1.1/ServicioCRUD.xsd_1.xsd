@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://Servicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Servicios/">
+
+<xs:element name="buscar" type="tns:buscar"/>
+
+<xs:element name="buscarResponse" type="tns:buscarResponse"/>
+
+<xs:element name="create" type="tns:create"/>
+
+<xs:element name="createResponse" type="tns:createResponse"/>
+
+<xs:element name="deleteEstudiante" type="tns:deleteEstudiante"/>
+
+<xs:element name="deleteEstudianteResponse" type="tns:deleteEstudianteResponse"/>
+
+<xs:element name="listarID" type="tns:listarID"/>
+
+<xs:element name="listarIDResponse" type="tns:listarIDResponse"/>
+
+<xs:element name="listarPaises" type="tns:listarPaises"/>
+
+<xs:element name="listarPaisesResponse" type="tns:listarPaisesResponse"/>
+
+<xs:element name="read" type="tns:read"/>
+
+<xs:element name="readResponse" type="tns:readResponse"/>
+
+<xs:element name="updateEstudiante" type="tns:updateEstudiante"/>
+
+<xs:element name="updateEstudianteResponse" type="tns:updateEstudianteResponse"/>
+
+<xs:complexType name="create">
+<xs:sequence>
+<xs:element name="ID_Estudiante" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="pais" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarPaises">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarPaisesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateEstudiante">
+<xs:sequence>
+<xs:element name="id_estudiante" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscar">
+<xs:sequence>
+<xs:element name="id_estudiante" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:estudiante" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="estudiante">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_Estudiante" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="pais" type="xs:string" minOccurs="0"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarID">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarIDResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:estudiante" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteEstudiante">
+<xs:sequence>
+<xs:element name="idEstudiante" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="read">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="readResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:estudiante" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
